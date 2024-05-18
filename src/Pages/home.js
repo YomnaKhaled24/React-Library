@@ -1,12 +1,197 @@
-import MyTitle from "../Components/mytitle.js";
-
-function Home(){
-
-return <>
-
-<MyTitle color="primary" content="Home"/>
-
-
-</>
+import React from "react";
+import { Link } from "react-router-dom";
+import { Carousel } from "react-bootstrap";
+const Home = () => {
+  return (
+    <>
+      <section className="slider_section"> 
+         <Carousel> 
+            <Carousel.Item> 
+              <img className="first-slide" src="images/banner.jpg" alt="First slide"/> 
+              <Carousel.Caption> 
+                <h1>The Best Libraries That<br/> Every Book Lover Must<br/> Visit!</h1> 
+                <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim<br/> veniam, quis nostrud exercitation </p> 
+                <div className="button_section"> <Link to="#" className="main_bt">Read More</Link>  </div> 
+                <ul className="locat_icon"> 
+                   <li> <Link to="#"><img src="icon/facebook.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/Twitter.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/linkedin.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/instagram.png" alt=""/></Link></li> 
+                </ul> 
+              </Carousel.Caption> 
+            </Carousel.Item> 
+            <Carousel.Item> 
+              <img className="second-slide" src="images/banner.jpg" alt="Second slide"/> 
+              <Carousel.Caption> 
+                <h1>The Best Libraries That<br/> Every Book Lover Must<br/> Visit!</h1> 
+                <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim<br/> veniam, quis nostrud exercitation </p> 
+                <div className="button_section"> <Link to="#" className="main_bt">Read More</Link>  </div> 
+                <ul className="locat_icon"> 
+                   <li> <Link to="#"><img src="icon/facebook.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/Twitter.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/linkedin.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/instagram.png" alt=""/></Link></li> 
+                </ul> 
+              </Carousel.Caption> 
+            </Carousel.Item> 
+            <Carousel.Item> 
+              <img className="third-slide" src="images/banner.jpg" alt="Third slide"/> 
+              <Carousel.Caption> 
+                <h1>The Best Libraries That<br/> Every Book Lover Must<br/> Visit!</h1> 
+                <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim<br/> veniam, quis nostrud exercitation </p> 
+                <div className="button_section"> <Link to="#" className="main_bt">Read More</Link>  </div> 
+                <ul className="locat_icon"> 
+                   <li> <Link to="#"><img src="icon/facebook.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/Twitter.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/linkedin.png" alt=""/></Link></li> 
+                   <li> <Link to="#"><img src="icon/instagram.png" alt=""/></Link></li> 
+                </ul> 
+              </Carousel.Caption> 
+            </Carousel.Item> 
+         </Carousel> 
+      </section>
+      {/* about */}
+      <div className="about">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-10 offset-md-1">
+                  <div className="aboutheading">
+                     <h2>About <strong className="black">Us</strong></h2>
+                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+                  </div>
+               </div>
+            </div>
+            <div className="row border">
+            <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                  <div className="about-box">
+                     <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                     <Link to="#">Read More</Link>
+                  </div>
+               </div>
+               <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                  <div className="about-box">
+                     <figure><img src="images/about.png" alt="img" /></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      {/* end about */}
+      {/* Library */}
+      <div className="Library">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-10 offset-md-1">
+                  <div className="titlepage">
+                     <h2>Our <strong className="black">Library </strong></h2>
+                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div className="bg">
+            <div className="container">
+               <div className="row">
+                  <div className="col-md-10 offset-md-1">
+                     <div className="Library-box">
+                        <figure><img src="images/Library-.jpg" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="read-more">
+                     <Link to="#">Read More</Link>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      {/* end Library */}
+      {/*Books */}
+      <div className="Books">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-10 offset-md-1">
+                  <div className="titlepage">
+                     <h2>Our <strong className="black">Books </strong></h2>
+                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
+                  </div>
+               </div>
+            </div>
+            <div className="row box">
+               <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div className="book-box">
+                     <figure><img src="images/book-1.jpg" alt="img"/></figure>
+                  </div>
+               </div>
+               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div className="book-box">
+                     <figure><img src="images/book-2.jpg" alt="img"/></figure>
+                  </div>
+               </div>
+               <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div className="book-box">
+                     <figure><img src="images/book-1.jpg" alt="img"/></figure>
+                  </div>
+               </div>
+               <div className="col-md-6 offset-md-3">
+               <p>magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris</p>
+               </div>
+            </div>
+            <div className="container">
+               <div className="row">
+                  <div className="col-md-12">
+                     <div className="read-more">
+                        <Link to="#">Read More</Link>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      {/* end Books */}
+      {/* Contact */}
+      <div className="Contact">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="titlepage3">
+                     <h2>Contact</h2>
+                  </div>
+               </div>
+            </div>
+            <div className="row">
+               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <form>
+                     <div className="row">
+                        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <input className="form-control" placeholder="Name" type="text"/>
+                        </div>
+                        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <input className="form-control" placeholder="Phone Number" type="tel"/>
+                        </div>
+                        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <input className="form-control" placeholder="Email" type="email"/>
+                        </div>
+                        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <textarea className="textarea" placeholder="Message"></textarea>
+                        </div>
+                     </div>
+                     <button className="send-btn" type="submit">Send</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      {/* end Contact */}
+     
+    </>
+  );
 }
-export default Home
+
+export default Home;
