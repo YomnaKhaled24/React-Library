@@ -3,5 +3,10 @@
     "about_nav2": "نبذة تعريفية",
     "books_nav3": "الكتب",
     "library_nav4": "المكتبة",
-    "contact_nav5": "تواصل معنا"
+    "contact_nav5": "تواصل معنا",
+    "filterbycategory":"فلترة بواسطة الفئة",
+    "category":"الفئة",
+    "categories":["فئة1", "فئة2", "فئة3"],
+    "view":"طريقةالعرض",
+    "by":"ل"
 }

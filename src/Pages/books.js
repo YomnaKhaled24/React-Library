@@ -36,7 +36,7 @@ const Books = () => {
                   <p>magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris</p>
                </div>
             </div>
-            <div className="container">
+            <div className="container mb-4">
                <div className="row">
                   <div className="col-md-12">
                      <div className="read-more">

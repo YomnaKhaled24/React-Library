@@ -4,6 +4,8 @@ import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { changeLanguageAction } from "../Store/Actions/changeLanguageAction";
 
 const Navbar = () => {
   const { t , i18n } = useTranslation()
@@ -11,10 +13,17 @@ const Navbar = () => {
   const lng = Cookies.get("i18next") || 'ar';
   // console.log(lng)
 
-  useEffect(()=>{
-    window.document.dir = i18n.dir();
+  // useEffect(()=>{
+  //   window.document.dir = i18n.dir();
 
-  },[lng])
+  // },[lng])
+
+  const dispatch = useDispatch ()
+      const changeLanguageRedux = (lang)=>{
+
+        dispatch(changeLanguageAction(lang))
+
+      }
   return (
     <nav>
       <div className="header">
@@ -23,7 +32,7 @@ const Navbar = () => {
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
               <div className="full">
                 <div className="center-desk">
-                  <div className="logo">
+                  <div className="">
                     <Link to="/">
                       <img src="images/logo.png" alt="#" />
                     </Link>
@@ -54,14 +63,16 @@ const Navbar = () => {
                         <Link to="/contact">{t('contact_nav5')}</Link>
                       </li>
                       <li>
-                        <button onClick={()=>{
+                        <button className="btn btn-light" onClick={()=>{
                           i18n.changeLanguage('ar');
+                          changeLanguageRedux('ar')
                         }} >Ar</button>
                       </li>
                       <li>
-                        <button onClick={()=>{
+                        <button className="btn btn-light" onClick={()=>{
                           i18n.changeLanguage('en');
-                        }}>En</button>
+                          changeLanguageRedux('en')
+                        }}>Sw</button>
                       </li>
                       {/* <li className="mean-last">
                         <Link to="#">

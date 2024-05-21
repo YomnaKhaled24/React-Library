@@ -5,7 +5,9 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
  
 const BookDetails = () => { 
   return ( 
-    <> 
+    <div className="details"> 
+    <div className="container">
+    <div className="row">  
     <Container className="mt-5"> 
       <Row> 
         <Col md={4}> 
@@ -74,8 +76,10 @@ const BookDetails = () => {
           </Tab.Container> 
         </Col> 
       </Row> 
-    </Container> 
-    </> 
+    </Container>
+    </div> 
+    </div>   
+    </div> 
   ); 
 }; 
  

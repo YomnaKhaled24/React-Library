@@ -1,7 +1,12 @@
 {
-    "home_nav1": "Home",
-    "about_nav2": "About Us",
-    "books_nav3": "Our Books",
-    "library_nav4": "Library",
-    "contact_nav5": "Contact"
+    "home_nav1": "Hem",
+    "about_nav2": "Om oss",
+    "books_nav3": "Våra böcker",
+    "library_nav4": "Bibliotek",
+    "contact_nav5": "Kontakt",
+    "filterbycategory":"Filtrera efter kategori",
+    "category":"Kategori",
+    "categories":["kategori1", "kategori2", "kategori3"],
+    "view":"Välj visningsvy",
+    "by":"av"
 }
