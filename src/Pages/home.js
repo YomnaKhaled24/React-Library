@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 const Home = () => {
+   const { t } = useTranslation();
+
   return (
     <>
       <section className="slider_section"> 
@@ -9,9 +12,9 @@ const Home = () => {
             <Carousel.Item> 
               <img className="first-slide" src="images/banner.jpg" alt="First slide"/> 
               <Carousel.Caption> 
-                <h1>The Best Libraries That<br/> Every Book Lover Must<br/> Visit!</h1> 
-                <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim<br/> veniam, quis nostrud exercitation </p> 
-                <div className="button_section"> <Link to="#" className="main_bt">Read More</Link>  </div> 
+                <h1>{t('first-sentence1')}<br/> {t('first-sentence2')}<br/> {t('first-sentence3')}</h1> 
+                <p>{t('first-sentence1')}<br/> {t('first-sentence2')}<br/> {t('first-sentence3')} </p> 
+                <div className="button_section"> <Link to="#" className="main_bt">{t('read_more')}</Link>  </div> 
                 <ul className="locat_icon"> 
                    <li> <Link to="#"><img src="icon/facebook.png" alt=""/></Link></li> 
                    <li> <Link to="#"><img src="icon/Twitter.png" alt=""/></Link></li> 
@@ -23,9 +26,9 @@ const Home = () => {
             <Carousel.Item> 
               <img className="second-slide" src="images/banner.jpg" alt="Second slide"/> 
               <Carousel.Caption> 
-                <h1>The Best Libraries That<br/> Every Book Lover Must<br/> Visit!</h1> 
-                <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim<br/> veniam, quis nostrud exercitation </p> 
-                <div className="button_section"> <Link to="#" className="main_bt">Read More</Link>  </div> 
+                <h1>{t('first-sentence1')}<br/> {t('first-sentence2')}<br/> {t('first-sentence3')}</h1> 
+                <p>{t('first-sentence1')}<br/> {t('first-sentence2')}<br/> {t('first-sentence3')} </p> 
+                <div className="button_section"> <Link to="#" className="main_bt">{t('read_more')}</Link>  </div> 
                 <ul className="locat_icon"> 
                    <li> <Link to="#"><img src="icon/facebook.png" alt=""/></Link></li> 
                    <li> <Link to="#"><img src="icon/Twitter.png" alt=""/></Link></li> 
@@ -34,7 +37,7 @@ const Home = () => {
                 </ul> 
               </Carousel.Caption> 
             </Carousel.Item> 
-            <Carousel.Item> 
+            {/* <Carousel.Item> 
               <img className="third-slide" src="images/banner.jpg" alt="Third slide"/> 
               <Carousel.Caption> 
                 <h1>The Best Libraries That<br/> Every Book Lover Must<br/> Visit!</h1> 
@@ -47,7 +50,7 @@ const Home = () => {
                    <li> <Link to="#"><img src="icon/instagram.png" alt=""/></Link></li> 
                 </ul> 
               </Carousel.Caption> 
-            </Carousel.Item> 
+            </Carousel.Item>  */}
          </Carousel> 
       </section>
       {/* about */}
@@ -56,16 +59,16 @@ const Home = () => {
             <div className="row">
                <div className="col-md-10 offset-md-1">
                   <div className="aboutheading">
-                     <h2>About <strong className="black">Us</strong></h2>
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+                     <h2>{t("about")} </h2>
+                     {/* <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> */}
                   </div>
                </div>
             </div>
             <div className="row border">
             <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                   <div className="about-box">
-                     <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                     <Link to="#">Read More</Link>
+                     <p> {t('about_page')}</p>
+                     <Link to="#">{t('read_more')}</Link>
                   </div>
                </div>
                <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12">
@@ -84,8 +87,8 @@ const Home = () => {
             <div className="row">
                <div className="col-md-10 offset-md-1">
                   <div className="titlepage">
-                     <h2>Our <strong className="black">Library </strong></h2>
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
+                     <h2>{t('library_nav4')}</h2>
+                     {/* <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>  */}
                   </div>
                </div>
             </div>
@@ -105,7 +108,7 @@ const Home = () => {
             <div className="row">
                <div className="col-md-12">
                   <div className="read-more">
-                     <Link to="#">Read More</Link>
+                     <Link to="#">{t('read_more')}</Link>
                   </div>
                </div>
             </div>
@@ -118,8 +121,8 @@ const Home = () => {
             <div className="row">
                <div className="col-md-10 offset-md-1">
                   <div className="titlepage">
-                     <h2>Our <strong className="black">Books </strong></h2>
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
+                     <h2>{t('contact_nav6')}</h2>
+                     {/* <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>  */}
                   </div>
                </div>
             </div>
@@ -140,14 +143,14 @@ const Home = () => {
                   </div>
                </div>
                <div className="col-md-6 offset-md-3">
-               <p>magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris</p>
+               {/* <p>magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris</p> */}
                </div>
             </div>
-            <div className="container">
+            <div className="container mb-5">
                <div className="row">
                   <div className="col-md-12">
                      <div className="read-more">
-                        <Link to="#">Read More</Link>
+                        <Link to="#">{t('read_more')}</Link>
                      </div>
                   </div>
                </div>
@@ -156,7 +159,7 @@ const Home = () => {
       </div>
       {/* end Books */}
       {/* Contact */}
-      <div className="Contact">
+      {/* <div className="Contact">
          <div className="container">
             <div className="row">
                <div className="col-md-12">
@@ -187,7 +190,7 @@ const Home = () => {
                </div>
             </div>
          </div>
-      </div>
+      </div> */}
       {/* end Contact */}
      
     </>

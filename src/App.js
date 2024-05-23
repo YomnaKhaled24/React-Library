@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import NotFound from "./Pages/notfound";
 import Contact from "./Pages/contact";
 import Library from "./Pages/library";
+import Services from "./Pages/services";
 import Book_Details from "./Pages/book_details"
 import React, { useEffect } from "react";
 
@@ -70,6 +71,7 @@ function App() {
           <Route component={Books} path="/books" exact />
           <Route component={Contact} path="/contact" exact />
           <Route component={Library} path="/library" exact />
+          <Route component={Services} path="/services" exact />
           <Route component={Book_Details} path="/BookDetails/:id"/>
           <Route component={NotFound} path="*" />
         </Switch> 

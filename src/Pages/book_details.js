@@ -40,12 +40,13 @@ const BookDetails = () => {
                   {t("author")}: {book.author}
                 </h4>
                 <hr />
-                <div className="d-flex align-items-center">
+                {/* <div className="d-flex align-items-center">
                   <span>
                     <FontAwesomeIcon icon={faHeart} /> {t("save_to_wishlist")}
                   </span>
                 </div>
-                <hr />
+                <hr /> */}
+
                 <Tab.Container defaultActiveKey="description">
                   <Nav variant="tabs">
                     <Nav.Item>

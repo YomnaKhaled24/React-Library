@@ -964,7 +964,7 @@ ul.top_icon li a{ color: #fff;
      display: inline-block;
      vertical-align: middle;
 }
- .main-menu ul>li:nth-child (6) {
+ .main-menu ul>li:nth-child(6) {
      padding-right: 0px;
 }
  .nav>li {
@@ -1601,9 +1601,9 @@ text-align: center;
 
  
 .Contact {
-    background-color: #282727;
-    margin-top: 90px;
-    padding: 90px 0px 90px 0px;
+    /* background-color: #282727; */
+    margin-top: 2rem;
+    padding: 10px 0px 90px 0px;
     min-height: 450px;
 }
 
@@ -1763,20 +1763,20 @@ ul.location_icon li a{
     margin-bottom: 90px;
 }
  .about-bg {
-    background-color: #b32137;
+    /* background-color: #b32137; */
 
 
 
-margin-top: 90px;
+margin-top: 5rem;
 }
 
 
 .Books-bg .titlepage {margin-top: 90px;}
 
 
-.Books-bg .read-more { margin-bottom: 90px; } 
+.Books-bg .read-more { margin-bottom: 2rem; } 
  .about-bg .abouttitle h2 {
-     color: #fff;
+     color: #000000;
      text-transform: uppercase;
      font-size: 40px;
      line-height: 45px;
@@ -1786,7 +1786,7 @@ margin-top: 90px;
 }
 
 .contact-page  .Contact {margin-top: 0px;}
-.contact-page .form-control  { margin-bottom: 20px;} 
+.contact-page .form-control  { margin-bottom: 2rem;} 
  
 /** slider arrow **/
  

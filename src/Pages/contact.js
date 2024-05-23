@@ -24,6 +24,7 @@ const Contact = () => {
   return (
     <>
       <Header content={t("contact")} />
+      {/* <div><h1>{t("contact")}</h1></div> */}
       <div className="Contact contact-page">
         <div className="container">
           <div className="row justify-content-center">

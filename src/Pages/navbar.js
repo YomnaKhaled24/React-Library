@@ -62,11 +62,16 @@ const Navbar = () => {
                       <li>
                         <Link to="/library">{t("library_nav4")}</Link>
                       </li>
+
+                      <li>
+                        <Link to="/services">{t("books_nav3")}</Link>
+                      </li>
+
                       <li>
                         <Link to="/contact">{t("contact_nav5")}</Link>
                       </li>
                       <li className="nav-item dropdown">
-                        <a
+                        <button
                           className="nav-link dropdown-toggle"
                           href="#"
                           id="languageDropdown"
@@ -87,12 +92,12 @@ const Navbar = () => {
                             className="mr-2"
                           />
                           {lng === "ar" ? "العربية" : "Svenska"}
-                        </a>
+                        </button>
                         <div
                           className="dropdown-menu"
                           aria-labelledby="languageDropdown"
                         >
-                          <a
+                          <button
                             className="dropdown-item"
                             href="#"
                             onClick={() => changeLanguage("ar")}
@@ -105,7 +110,7 @@ const Navbar = () => {
                               className="mr-2"
                             />
                             العربية
-                          </a>
+                          </button>
                           <a
                             className="dropdown-item"
                             href="#"
