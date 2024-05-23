@@ -1,7 +1,7 @@
 [
   {
     "title": "Babbel över Nilen",
-    "format": "Pocketbok",
+    "format": "Häftad",
     "language": "Svenska",
     "weight": "192 gram",
     "translator": "Camiel Al-Sabitti",
@@ -11,6 +11,7 @@
     "publisher": "Como förlag",
     "page_count": 158,
     "published_date": "2022-01-22",
+    "published_year": "2022",
     "ISBN": "9789151972800",
     "img": "https://s1.adlibris.com/images/62648499/babbel-over-nilen.jpg"
   },
@@ -26,6 +27,7 @@
     "publisher": "Como förlag",
     "page_count": 320,
     "published_date": "2020-12-15",
+    "published_year": "2020",
     "ISBN": "9789151972787",
     "img": "https://s2.adlibris.com/images/60473239/estrid-arabiska.jpg"
   },
@@ -41,6 +43,7 @@
     "publisher": "Como förlag",
     "page_count": 168,
     "published_date": " 2021-11-10",
+    "published_year": "2021",
     "ISBN": "9789151972794",
     "img": "https://s1.adlibris.com/images/62642391/nar-jorden-blir-guld-arabiska.jpg"
   },
@@ -56,6 +59,7 @@
     "publisher": "Como förlag",
     "page_count": 127,
     "published_date": " 2020-05-12",
+    "published_year": "2020",
     "ISBN": "9788770840637",
     "img": "https://s1.adlibris.com/images/59412380/benvenuti-in-danimarca-italiensk-2020.jpg"
   },
@@ -71,6 +75,7 @@
     "publisher": "Como förlag",
     "page_count": "",
     "published_date": "2022-09-01",
+    "published_year": "2022",
     "ISBN": "9789198797206",
     "img": "https://s2.adlibris.com/images/64294573/den-dar-framlingen.jpg"
   },
@@ -86,6 +91,7 @@
     "publisher": "Prosak Förlag",
     "page_count": 116,
     "published_date": "2022-03-11",
+    "published_year": "2022",
     "ISBN": "9789198684742",
     "img": "https://s2.adlibris.com/images/62281026/som-om-forlatelse-fanns.jpg"
   },
@@ -101,6 +107,7 @@
     "publisher": "Litura förlag",
     "page_count": 193,
     "published_date": "2019-08-17",
+    "published_year": "2019",
     "ISBN": "9789186528133",
     "img": "https://s2.adlibris.com/images/60908543/dotcom.jpg"
   },
@@ -116,6 +123,7 @@
     "publisher": "Como förlag",
     "page_count": 394,
     "published_date": "2015-11-02",
+    "published_year": "2015",
     "ISBN": " 9789100158354",
     "img": "https://s2.adlibris.com/images/22184778/casanovas-senare-resor-roman-tillagnad-minnet-av-jacques-giacomo-casanova-de-seingalt-1725-1798.jpg"
   },
@@ -131,6 +139,7 @@
     "publisher": "Smockadoll Förlag",
     "page_count": 88,
     "published_date": "2018-05-23",
+    "published_year": "2018",
     "ISBN": "9789186175788",
     "img": "https://s2.adlibris.com/images/44163626/giacomo-ponti.jpg"
   },
@@ -146,6 +155,7 @@
     "publisher": "Grønlunds forlag",
     "page_count": 127,
     "published_date": "2020-05-12",
+    "published_year": "2020",
     "ISBN": "9788770840644",
     "img": "https://s2.adlibris.com/images/59411414/bienvenidos-a-dinamarca-spansk-2020.jpg"
   }

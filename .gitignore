@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Ignore the server.js file in the root directory
+server.js
+
 # testing
 /coverage
 

@@ -7,7 +7,7 @@ const Books = () => {
     <>
     <Header content="Our Books"/>
        {/* Books */}
-      <div className="Books">
+      {/* <div className="Books">
          <div className="container">
             <div className="row">
                <div className="col-md-10 offset-md-1">
@@ -46,7 +46,7 @@ const Books = () => {
                </div>
             </div>
          </div>
-      </div>
+      </div> */}
       {/* end Books */}
     </>
   );

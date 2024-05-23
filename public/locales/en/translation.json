@@ -8,5 +8,26 @@
     "category":"Kategori",
     "categories":["kategori1", "kategori2", "kategori3"],
     "view":"Välj visningsvy",
-    "by":"av"
+    "by":"av",
+    "author":"Författare",
+    "description":"Beskriving",
+    "product_info":"Produktinfo",
+    "translator":"Översättare",
+    "edition":"Upplaga",
+    "language":"Språk",
+    "weight":"Vikt",
+    "published_date":"Utgiven",
+    "publisher":"Förlag",
+    "page_count":"Antal sidor",
+    "about_page":"Förlaget grundades under namnet (Como bokförlag) 2020, men vi bestämde oss för att byta namn till Bokbryggan  eftersom vi bestämde oss för att vara en bro för kärleken. En kommunikationsbrygga mellan två världar som faktiskt ligger nära varandra, eftersom de besitter ett mänskligt arv rikt på civilisation och kunskap.Vårt mål är att sprida lugn och ro bland människor genom litterär och konstnärlig kreativitet.",
+    "copyright":"Upphovsrätt 2024 Alla rättigheter förbehållna av Como bokförlag",
+    "name":"Namn",
+    "email":"E-post",
+    "subject":"Ämne",
+    "phone_number":"Telefonnummer",
+    "message":"Meddelande",
+    "send":"Skicka",
+    "contact": "Kontakt",
+    "about":"Handla Om"
+
 }

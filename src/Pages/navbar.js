@@ -92,22 +92,23 @@ const Navbar = () => {
                           className="dropdown-menu"
                           aria-labelledby="languageDropdown"
                         >
-                          <button
+                          <a
                             className="dropdown-item"
-                            // href=""
+                            href="#"
                             onClick={() => changeLanguage("ar")}
                           >
                             <img
-                              src="https://cdn.weglot.com/flags/rectangle_mat/sa.svg" width="30"
+                              src="https://cdn.weglot.com/flags/rectangle_mat/sa.svg"
+                              width="30"
                               height="20"
                               alt="Arabic flag"
                               className="mr-2"
                             />
                             العربية
-                          </button>
-                          <button
+                          </a>
+                          <a
                             className="dropdown-item"
-                            // href="#"
+                            href="#"
                             onClick={() => changeLanguage("en")}
                           >
                             <img
@@ -118,7 +119,7 @@ const Navbar = () => {
                               className="mr-2"
                             />
                             Svenska
-                          </button>
+                          </a>
                         </div>
                       </li>
                     </ul>

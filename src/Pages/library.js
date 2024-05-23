@@ -126,7 +126,7 @@ function Library() {
                     } 
                   > 
                     <div className={viewMode === "grid" ? "card h-100" : "d-flex"}> 
-                      <Link to="#" className={viewMode === "grid" ? "" : "mr-3"}> 
+                      <Link to={`/BookDetails/${book.ISBN}`} className={viewMode === "grid" ? "" : "mr-3"}> 
                         <img 
                           src={book.img} 
                           alt={book.title} 
