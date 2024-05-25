@@ -7,7 +7,7 @@
     "contact_nav6": "Biblioteket", 
     "filterbycategory":"Filtrera efter kategori",
     "category":"Kategori",
-    "categories":["kategori1", "kategori2", "kategori3"],
+    "categories":["Geografiska områden", "Skönlitteratur", "Samhälle & politik"],
     "view":"Välj visningsvy",
     "by":"av",
     "author":"Författare",
@@ -21,6 +21,7 @@
     "publisher":"Förlag",
     "page_count":"Antal sidor",
     "about_page":"Förlaget grundades under namnet (Dar Al-Jisr bokförlag) 2020, men vi bestämde oss för att byta namn till Bokbryggan  eftersom vi bestämde oss för att vara en bro för kärleken. En kommunikationsbrygga mellan två världar som faktiskt ligger nära varandra, eftersom de besitter ett mänskligt arv rikt på civilisation och kunskap.Vårt mål är att sprida lugn och ro bland människor genom litterär och konstnärlig kreativitet.",
+    "about_title":"Upptäck vår historia",
     "copyright":"Copyright 2024 Alla rättigheter reserverade till Al-Jisr Publishing House.",
     "name":"Namn",
     "email":"E-post",
@@ -29,11 +30,20 @@
     "message":"Meddelande",
     "send":"Skicka",
     "contact": "Kontakt",
+    "contact_title": "Vi är här för att hjälpa till! Tveka inte att kontakta oss för frågor eller synpunkter. Vårt team är redo att svara dig så snart som möjligt.",
     "about":"Handla Om",
     "first-sentence1":"De bästa biblioteken som",
     "first-sentence2":"Varje bokälskare måste",
     "first-sentence3":"Besök!",
-    "read_more":"Läs mer"
+    "read_more":"Läs mer",
+    "service_title": "Våra tjänster från A till Ö för att få boken publicerad och spridd brett",
+    "services1": "Bokomslagsdesign",
+    "services1_price": "Från 350 kr",
+    "services2": "Boklayout",
+    "services2_price": "Från .... kr",
+    "services3": "Komplett bok från design till tryck i måtten ... x ... med papper av typen ...",
+    "services3_price": "Från .... kr",
+    "our_book_title":"Utforska vår unika samling av våra utgåvor."
 
 
 }

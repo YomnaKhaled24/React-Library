@@ -13,7 +13,9 @@
     "published_date": "2022-01-22",
     "published_year": "2022",
     "ISBN": "9789151972800",
-    "img": "https://s1.adlibris.com/images/62648499/babbel-over-nilen.jpg"
+    "img": "https://s1.adlibris.com/images/62648499/babbel-over-nilen.jpg",
+    "categories":"الأدب الجميل"
+
   },
   {
     "title": "إستريد (العربية)",
@@ -29,7 +31,8 @@
     "published_date": "2020-12-15",
     "published_year": "2020",
     "ISBN": "9789151972787",
-    "img": "https://s2.adlibris.com/images/60473239/estrid-arabiska.jpg"
+    "img": "https://s2.adlibris.com/images/60473239/estrid-arabiska.jpg",
+    "categories": ["المناطق الجغرافية", "الأدب الجميل"]
   },
   {
     "title": "عندما تصبح الأرض ذهبًا (العربية)",
@@ -45,7 +48,8 @@
     "published_date": "2021-11-10",
     "published_year": "2021",
     "ISBN": "9789151972794",
-    "img": "https://s1.adlibris.com/images/62642391/nar-jorden-blir-guld-arabiska.jpg"
+    "img": "https://s1.adlibris.com/images/62642391/nar-jorden-blir-guld-arabiska.jpg",
+    "categories": "المجتمع والسياسة"
   },
   {
     "title": "الغريب ذلك",
@@ -61,6 +65,7 @@
     "published_date": "2022-09-01",
     "published_year": "2022",
     "ISBN": "9789198797206",
-    "img": "https://s2.adlibris.com/images/64294573/den-dar-framlingen.jpg"
+    "img": "https://s2.adlibris.com/images/64294573/den-dar-framlingen.jpg",
+    "categories":"الأدب الجميل"
   }
 ]
