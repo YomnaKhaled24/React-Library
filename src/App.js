@@ -1,7 +1,6 @@
 import "./App.css";
 import Home from "./Pages/home";
 import About from "./Pages/about";
-import Books from "./Pages/books";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/navbar";
@@ -25,7 +24,7 @@ i18n
   .use(initReactI18next)
   .use(HttpApi)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "ar",
     detection:{
       order: [ 
       'cookie', 
@@ -62,20 +61,24 @@ function App() {
 
   return (
     <div dir={lng === 'ar' ? 'rtl' : 'ltr'}>
-    {/* <div> */}
       <BrowserRouter>
+      <div className="d-flex flex-column min-vh-100">
         <Navbar />
+        <main className="flex-grow-1">
         <Switch>
           <Route component={Home} path="/" exact />
           <Route component={About} path="/about" exact />
-          <Route component={Books} path="/books" exact />
           <Route component={Contact} path="/contact" exact />
           <Route component={Library} path="/library" exact />
           <Route component={Services} path="/services" exact />
-          <Route component={Book_Details} path="/BookDetails/:id"/>
+          <Route component={Book_Details} path="/BookDetails/:id"/> 
           <Route component={NotFound} path="*" />
         </Switch> 
+         </main>
+       
         <Footer />
+        </div>
+       
       </BrowserRouter>
     </div>
   );
