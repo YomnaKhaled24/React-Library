@@ -23,7 +23,7 @@ const BookDetails = () => {
   }, [lng, id]);
 
   return (
-    <div className="Library">
+    <div className="Library mt-5">
       <div className="container mt-2">
         <div className="row">
           <div className="col-md-4">

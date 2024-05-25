@@ -6,6 +6,10 @@ import Cookies from "js-cookie";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { changeLanguageAction } from "../Store/Actions/changeLanguageAction";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -29,113 +33,119 @@ const Navbar = () => {
     dispatch(changeLanguageAction(lang));
   };
   return (
-    <nav dir="ltr">
-      <div className="header">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-              {/* <div className="full">
-                <div className="center-desk">
-                  <div className="">
-                    <Link to="/">
-                      <img src="images/logo.png" alt="#" />
-                    </Link>
-                  </div>
-                </div>
-              </div>*/}
-            </div> 
-            <div className="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-              <div className="menu-area">
-                <div className="limit-box">
-                  <nav className="main-menu">
-                    <ul className="menu-area-main">
-                      <li className="active">
-                        {/* <Link to="/">Home</Link> */}
-                        <Link to="/">{t("home_nav1")}</Link>
-                      </li>
-                      <li>
-                        <Link to="/about">{t("about_nav2")}</Link>
-                      </li>
-                      {/* <li>
-                        <Link to="/books">{t("books_nav3")}</Link>
-                      </li> */}
-                      <li>
-                        <Link to="/library">{t("library_nav4")}</Link>
-                      </li>
-
-                      <li>
-                        <Link to="/services">{t("books_nav3")}</Link>
-                      </li>
-
-                      <li>
-                        <Link to="/contact">{t("contact_nav5")}</Link>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <button
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          id="languageDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <img
-                            src={
-                              lng === "ar"
-                                ? "https://cdn.weglot.com/flags/rectangle_mat/sa.svg"
-                                : "https://cdn.weglot.com/flags/rectangle_mat/se.svg"
-                            }
-                            width="30"
-                            height="20"
-                            alt="Language flag"
-                            className="mr-2"
-                          />
-                          {lng === "ar" ? "العربية" : "Svenska"}
-                        </button>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="languageDropdown"
-                        >
-                          <button
-                            className="dropdown-item"
-                            href="#"
-                            onClick={() => changeLanguage("ar")}
-                          >
-                            <img
-                              src="https://cdn.weglot.com/flags/rectangle_mat/sa.svg"
-                              width="30"
-                              height="20"
-                              alt="Arabic flag"
-                              className="mr-2"
-                            />
-                            العربية
-                          </button>
-                          <a
-                            className="dropdown-item"
-                            href="#"
-                            onClick={() => changeLanguage("en")}
-                          >
-                            <img
-                              src="https://cdn.weglot.com/flags/rectangle_mat/se.svg"
-                              width="30"
-                              height="20"
-                              alt="Swedish flag"
-                              className="mr-2"
-                            />
-                            Svenska
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+      
+    //   <nav className="navbar navbar-expand-lg navbar-light bg-light" dir="ltr">
+    //   <div className="container-fluid">
+    //     <Link className="navbar-brand" to="/">
+    //       <img src="images/logo.png" alt="Logo" />
+    //     </Link>
+    //     <button
+    //       className="navbar-toggler"
+    //       type="button"
+    //       data-bs-toggle="collapse" 
+    //       data-bs-target="#navbarNavDropdown" 
+    //       aria-controls="navbarNavDropdown" 
+    //       aria-expanded="false" 
+    //       aria-label="Toggle navigation"
+    //     >
+    //       <span className="navbar-toggler-icon"></span>
+    //     </button>
+    //     <div className="collapse navbar-collapse" id="navbarNavDropdown">
+    //       <ul className="navbar-nav ml-auto">
+    //         <li className="nav-item active">
+    //           <Link className="nav-link" to="/">{t("home_nav1")}</Link>
+    //         </li>
+    //         <li className="nav-item">
+    //           <Link className="nav-link" to="/about">{t("about_nav2")}</Link>
+    //         </li>
+    //         <li className="nav-item">
+    //           <Link className="nav-link" to="/library">{t("library_nav4")}</Link>
+    //         </li>
+    //         <li className="nav-item">
+    //           <Link className="nav-link" to="/services">{t("books_nav3")}</Link>
+    //         </li>
+    //         <li className="nav-item">
+    //           <Link className="nav-link" to="/contact">{t("contact_nav5")}</Link>
+    //         </li>
+    //         <li className="nav-item dropdown">
+    //           <button
+    //             className="nav-link dropdown-toggle btn btn-link"
+    //             id="languageDropdown"
+    //             role="button"
+    //             data-bs-toggle="dropdown"
+    //             data-toggle="dropdown"
+    //             // aria-haspopup="true"
+    //             aria-expanded="false"
+    //           >
+    //             <img
+    //               src={
+    //                 lng === "ar"
+    //                   ? "https://cdn.weglot.com/flags/rectangle_mat/sa.svg"
+    //                   : "https://cdn.weglot.com/flags/rectangle_mat/se.svg"
+    //               }
+    //               width="30"
+    //               height="20"
+    //               alt="Language flag"
+    //               className="mr-2"
+    //             />
+    //             {lng === "ar" ? "العربية" : "Svenska"}
+    //           </button>
+    //           <div className="dropdown-menu" aria-labelledby="languageDropdown">
+    //             <button
+    //               className="dropdown-item"
+    //               onClick={() => changeLanguage("ar")}
+    //             >
+    //               <img
+    //                 src="https://cdn.weglot.com/flags/rectangle_mat/sa.svg"
+    //                 width="30"
+    //                 height="20"
+    //                 alt="Arabic flag"
+    //                 className="mr-2"
+    //               />
+    //               العربية
+    //             </button>
+    //             <button
+    //               className="dropdown-item"
+    //               onClick={() => changeLanguage("en")}
+    //             >
+    //               <img
+    //                 src="https://cdn.weglot.com/flags/rectangle_mat/se.svg"
+    //                 width="30"
+    //                 height="20"
+    //                 alt="Swedish flag"
+    //                 className="mr-2"
+    //               />
+    //               Svenska
+    //             </button>
+    //           </div>
+    //         </li>
+    //       </ul>
+    //     </div>
+    //   </div>
+    // </nav>
   );
 };
 

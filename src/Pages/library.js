@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import Header from "../Components/Header.js";
 
 function Library() { 
   const [books, setBooks] = useState([]); 
@@ -15,11 +16,6 @@ function Library() {
  
   // const lng = Cookies.get("i18next") || 'ar';
   const lng = useSelector((state) => state.langR.lang);
-  
-  // const categories = t('categories')
-  // const categories = []
-
-
 
   useEffect(() => { 
     if(lng === 'en')
@@ -28,7 +24,7 @@ function Library() {
       .then((response) => response.json()) 
       .then((data) => setBooks(data)); 
 
-      setCategories(["kategori1", "kategori2", "kategori3"])
+      setCategories(["Geografiska områden", "Skönlitteratur", "Samhälle & politik"])
 
     }
     else
@@ -37,20 +33,20 @@ function Library() {
       .then((response) => response.json()) 
       .then((data) => setBooks(data));
 
-      setCategories(["فئة1", "فئة2", "فئة3"])
+      setCategories(["المناطق الجغرافية", "الأدب الجميل", "المجتمع والسياسة"])
     }
     // console.log(books)
   }, [lng]); 
  
   const filteredBooks = selectedCategories.length === 0 
     ? books 
-    : books.filter((book) => selectedCategories.includes(book.category)); 
+    : books.filter((book) => selectedCategories.includes(book.categories)); 
  
-  const handleCategoryChange = (category) => { 
-    if (selectedCategories.includes(category)) { 
-      setSelectedCategories(selectedCategories.filter((cat) => cat !== category)); 
+  const handleCategoryChange = (categories) => { 
+    if (selectedCategories.includes(categories)) { 
+      setSelectedCategories(selectedCategories.filter((cat) => cat !== categories)); 
     } else { 
-      setSelectedCategories([...selectedCategories, category]); 
+      setSelectedCategories([...selectedCategories, categories]); 
     } 
   }; 
 
@@ -63,18 +59,21 @@ function Library() {
   };
  
   return ( 
+    <>
+    <Header content="Our Books"/>
+    <p className="text-center mb-5">{t('our_book_title')}</p>
     <div className="Library">
       <div className="container mt-2"> 
         <div className="row"> 
           <div className="col-md-3"> 
             <div className="p-3 border-right"> 
-              <span>{t('filterbycategory')}</span> 
-              <ul className="list-group list-group-flush rounded"> 
+            <span>{t('filterbycategory')}</span>
+              <ul className="list-group list-group-flush rounded mt-4"> 
                 <li className="list-group-item"> 
-                  <h5 className="mt-1 mb-1">{t('category')}</h5> 
+                  <h5 className="mt-2 mb-2">{t('category')}</h5> 
                   <div className="d-flex flex-column"> 
                     {categories.map((v, i) => ( 
-                      <div key={i} className="form-check"> 
+                      <div key={i} className="form-check mt-3"> 
                         <input 
                           className="form-check-input" 
                           type="checkbox" 
@@ -159,16 +158,16 @@ function Library() {
                         > 
                           <span>{t('by')} </span> 
                           <strong className="ml-1 mx-2">{book.author}</strong> 
-                          <span className="ml-3 mx-2"> 
+                          {/* <span className="ml-3 mx-2"> 
                             <FontAwesomeIcon icon={faHeart} /> 
-                          </span> 
+                          </span>  */}
                         </div> 
                         <div 
                           className={`text-secondary ${ 
                             viewMode === "grid" ? "d-none" : "mt-2" 
                           }`} 
                         > 
-                          <span>Pocketbok, </span> 
+                          <span>{book.format} </span> 
                           <span>{book.published_date}, </span> 
                           <span>{book.language}, </span> 
                           <span>ISBN {book.ISBN}</span> 
@@ -194,6 +193,7 @@ function Library() {
         </div> 
       </div> 
     </div>
+    </>
   ); 
 } 
  
