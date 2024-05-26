@@ -11,6 +11,8 @@ const BookDetails = () => {
   const { t } = useTranslation();
   const lng = useSelector((state) => state.langR.lang);
   const [book, setBook] = useState(null);
+  const [activeKey, setActiveKey] = useState('description');
+
 
   useEffect(() => {
     const file = lng === "en" ? "/Svenska.json" : "/Arabic.json";
@@ -23,20 +25,21 @@ const BookDetails = () => {
   }, [lng, id]);
 
   return (
-    <div className="Library mt-5">
-      <div className="container mt-2">
+    <div className="Library">
+      <div className="container">
         <div className="row">
-          <div className="col-md-4">
-            {book && <img src={book.img} alt={book.title} className="img-fluid" />}
+          <div className="col-md-4 text-center">
+            {book && <img src={book.img} alt={book.title} className="img-fluid mb-2"
+            style={{width:"19rem", height:"28rem"}} />}
           </div>
           <div className="col-md-8">
             {book && (
               <>
-                <h2>
+                <h2 className="custom-text-color2">
                   {book.title} - {book.format}, {book.language},{" "}
                   {book.published_year}
                 </h2>
-                <h4>
+                <h4 className="custom-text-color2">
                   {t("author")}: {book.author}
                 </h4>
                 <hr />
@@ -47,22 +50,22 @@ const BookDetails = () => {
                 </div>
                 <hr /> */}
 
-                <Tab.Container defaultActiveKey="description">
+                <Tab.Container defaultActiveKey="description" activeKey={activeKey} onSelect={(selectedKey) => setActiveKey(selectedKey)}>
                   <Nav variant="tabs">
-                    <Nav.Item>
-                      <Nav.Link eventKey="description">{t("description")}</Nav.Link>
+                    <Nav.Item ac>
+                      <Nav.Link eventKey="description" style={{ fontWeight: activeKey === "description" ? "bolder" : "normal" }} className="custom-text-color2 fs-5">{t("description")} </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="productInfo">{t("product_info")}</Nav.Link>
+                      <Nav.Link eventKey="productInfo" style={{ fontWeight: activeKey === "productInfo" ? "bolder" : "normal" }} className="custom-text-color fs-5">{t("product_info")}</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content className="mt-3">
-                    <Tab.Pane eventKey="description">
-                      <p>{book.description}</p>
+                    <Tab.Pane eventKey="description" >
+                      <p className="custom-text-color2 fw-light fw-1">{book.description}</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="productInfo">
                       <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6 custom-text-color2 fw-1">
                           <ul>
                             <li>
                               {t("author")}: {book.author}
@@ -79,7 +82,7 @@ const BookDetails = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 custom-text-color2 fw-1">
                           <ul>
                             <li>
                               {t("weight")}: {book.weight}

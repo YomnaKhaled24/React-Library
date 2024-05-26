@@ -2,6 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useDispatch } from "react-redux";
 import { changeLanguageAction } from "../Store/Actions/changeLanguageAction";
 
@@ -21,13 +23,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-4" dir="ltr">
+    <nav className="navbar navbar-expand-lg p-3 main-menu navbar-dark" dir="ltr">
       <div className="container">
         <Link className="navbar-brand" to="/">
           {/* <img src="" alt="#" /> */}
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler " 
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -36,11 +38,12 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
+
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className={`nav-item ${isActive("/")}`}>
-              <Link className="nav-link" to="/">{t("home_nav1")}</Link>
+              <Link className="nav-link " to="/">{t("home_nav1")}</Link>
             </li>
             <li className={`nav-item ${isActive("/about")}`}>
               <Link className="nav-link" to="/about">{t("about_nav2")}</Link>

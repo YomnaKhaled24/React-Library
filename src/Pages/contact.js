@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <Header content={t("contact")} />
-      <p className="text-center mb-5">{t('contact_title')}</p>
+      <h4 className="text-center mb-5 custom-text-color">{t('contact_title')}</h4>
       <ContactComponent/>
     </>
   );

@@ -28,9 +28,9 @@ function Footer() {
             </div>
          </div>
       </div> */}
-    <div className="copyright bg-black mt-auto">
+    <div className="copyright mt-5">
        <div className="container ">
-          <p className="text-light">{t("copyright")}</p> 
+          <p className="text-light m-auto">{t("copyright")}</p> 
        </div>
     </div>
  </footer>

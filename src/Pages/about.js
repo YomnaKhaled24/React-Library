@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <Header content={t("about")} />
-      <p className="text-center">{t("about_title")}</p>
+      <h4 className="text-center custom-text-color mb-5">{t("about_title")}</h4>
      <AboutComponent/>
     </>
   );

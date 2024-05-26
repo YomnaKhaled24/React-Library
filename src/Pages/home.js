@@ -12,122 +12,45 @@ const Home = () => {
 
   return (
     <>
-      <section className="slider_section">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="first-slide"
-              src="images/banner.jpg"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h1>
-                {t("first-sentence1")}
-                <br /> {t("first-sentence2")}
-                <br /> {t("first-sentence3")}
-              </h1>
-              <p>
-                {t("first-sentence1")}
-                <br /> {t("first-sentence2")}
-                <br /> {t("first-sentence3")}{" "}
-              </p>
-              <div className="button_section">
-                {" "}
-                <Link to="#" className="main_bt">
-                  {t("read_more")}
-                </Link>{" "}
-              </div>
-              <ul className="locat_icon">
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/facebook.png" alt="" />
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/Twitter.png" alt="" />
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/linkedin.png" alt="" />
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/instagram.png" alt="" />
-                  </Link>
-                </li>
-              </ul>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="second-slide"
-              src="images/banner.jpg"
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h1>
-                {t("first-sentence1")}
-                <br /> {t("first-sentence2")}
-                <br /> {t("first-sentence3")}
-              </h1>
-              <p>
-                {t("first-sentence1")}
-                <br /> {t("first-sentence2")}
-                <br /> {t("first-sentence3")}{" "}
-              </p>
-              <div className="button_section">
-                {" "}
-                <Link to="#" className="main_bt">
-                  {t("read_more")}
-                </Link>{" "}
-              </div>
-              <ul className="locat_icon">
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/facebook.png" alt="" />
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/Twitter.png" alt="" />
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/linkedin.png" alt="" />
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="#">
-                    <img src="icon/instagram.png" alt="" />
-                  </Link>
-                </li>
-              </ul>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </section>
+      <Carousel fade>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="images/banner11.png"
+          alt="First slide"
+          // style={{height:"30rem"}}
+        />
+        <Carousel.Caption  className="banner-coler custom-carousel-caption">
+          <h1 >{t('first-sentence1')}</h1>
+          <h1 >{t('first-sentence2')}</h1>
+          <h1 >{t('first-sentence3')}</h1>
+
+          {/* <p className="custom-text-color2">Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="images/banner13.png"
+          alt="Second slide"
+        />
+        <Carousel.Caption className="banner-coler custom-carousel-caption">
+          <h1 >{t('first-sentence1')}</h1>
+          <h1 >{t('first-sentence2')}</h1>
+          <h1 >{t('first-sentence3')}</h1>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
       
       <Header content={t("about")} />
-      {/* <p className="text-center">{t("about_title")}</p> */}
+      <h4 className="text-center custom-text-color mb-5">{t("about_title")}</h4>
      <AboutComponent/>
       <Header content={t("books_nav3")} /> 
-      {/* <p className="text-center mb-5">{t('service_title')}</p> */}
+      <h4 className="text-center custom-text-color mb-5">{t('service_title')}</h4>
       <ServicesComponent/>
       <OurBookHome/>  
       <Header content={t("contact")} />
-      {/* <p className="text-center mb-5">{t('contact_title')}</p> */}
+      <h4 className="text-center custom-text-color mb-5">{t('contact_title')}</h4>
       <ContactComponent/>
     </>
   );

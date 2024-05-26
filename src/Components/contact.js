@@ -24,7 +24,7 @@ function Contact () {
     <>
       <div className="Contact contact-page">
         <div className="container">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-5">
             <div className="col-xl-8 col-lg-10 col-md-12">
               <form onSubmit={handleSubmit}>
                 <div className="row">

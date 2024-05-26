@@ -11,7 +11,7 @@ const Services = () => {
     return(
         <>
          <Header content={t("books_nav3")} /> 
-         <p className="text-center mb-5">{t('service_title')}</p>
+         <h4 className="text-center mb-5 custom-text-color">{t('service_title')}</h4>
          <ServicesComponent/>
         
         

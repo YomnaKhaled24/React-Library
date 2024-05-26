@@ -22,7 +22,7 @@ function Services () {
 
     return(
         <>
-       <Row xs={1} md={3} className="g-4 mb-5 mx-5">
+       <Row xs={1} s={1} md={2} lg={3} className="g-4 mb-5 mx-5">
       {services.map((service, index) => (
         <Col key={index}>
           <Card
@@ -32,8 +32,8 @@ function Services () {
             onMouseLeave={() => setHoveredCardIndex(null)}
           >
             <Card.Img variant="top" src={service.img} />
-            <Card.Body>
-              <Card.Title>{service.title}</Card.Title>
+            <Card.Body className="custom-text-color">
+              <Card.Title >{service.title}</Card.Title>
               <Card.Text>{service.text}</Card.Text>
             </Card.Body>
           </Card>
