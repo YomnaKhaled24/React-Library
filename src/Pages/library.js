@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import Header from "../Components/Header.js";
+import Header from "../Components/header.js";
 import Row from "react-bootstrap/Row";
 
 function Library() {
