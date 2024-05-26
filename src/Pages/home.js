@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import ContactComponent from "../Components/contact.js";
-import Header from "../Components/Header.js";
+import Header from "../Components/header.js";
 import AboutComponent from "../Components/about.js";
 import ServicesComponent from "../Components/services.js";
 import OurBookHome from "../Components/our_book_home.js";
