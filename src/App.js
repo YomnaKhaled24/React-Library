@@ -4,7 +4,7 @@ import About from "./Pages/about";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/navbar";
-import Footer from "./Components/Footer";
+import Footer from "./Components/footer";
 import NotFound from "./Pages/notfound";
 import Contact from "./Pages/contact";
 import Library from "./Pages/library";
