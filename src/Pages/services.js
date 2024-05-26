@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Components/Header.js";
+import Header from "../Components/header.js";
 import ServicesComponent from "../Components/services.js";
 import { useTranslation } from "react-i18next";
 
