@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import Header from "../Components/Header.js";
+import Header from "../Components/header.js";
 import Carousel from 'react-bootstrap/Carousel';
 import Marquee from "react-fast-marquee";
 import Card from 'react-bootstrap/Card';
