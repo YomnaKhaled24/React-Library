@@ -1,4 +1,4 @@
-import Header from "../Components/Header.js";
+import Header from "../Components/header.js";
 import ContactComponent from "../Components/contact.js";
 import React, { useState } from 'react';
 import axios from 'axios';
