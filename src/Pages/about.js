@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Components/Header.js";
+import Header from "../Components/header.js";
 import AboutComponent from "../Components/about.js";
 import { useTranslation } from "react-i18next";
 const About = () => {
