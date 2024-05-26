@@ -34,7 +34,6 @@ function Services () {
             <Card.Img variant="top" src={service.img} />
             <Card.Body className="custom-text-color">
               <Card.Title >{service.title}</Card.Title>
-              <Card.Text>{service.text}</Card.Text>
             </Card.Body>
           </Card>
         </Col>
