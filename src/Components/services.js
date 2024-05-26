@@ -15,9 +15,9 @@ function Services () {
     });
 
     const services = [
-      { img: 'images/service1.png', title: t('services1'), text: t('services1_price') },
-      { img: 'images/service2.png', title: t('services2'), text: t('services2_price') },
-      { img: 'images/service3.png', title: t('services3'), text: t('services3_price') },
+      { img: 'images/service1.png', title: t('services1') },
+      { img: 'images/service2.png', title: t('services2') },
+      { img: 'images/service3.png', title: t('services3') },
     ];
 
     return(
