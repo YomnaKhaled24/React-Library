@@ -15,13 +15,21 @@ function Library() {
   const [viewMode, setViewMode] = useState("list");
   const { t, i18n } = useTranslation();
   const windowWidth = window.innerWidth;
-  console.log(windowWidth);
+  // console.log(windowWidth);
 
   // const lng = Cookies.get("i18next") || 'ar';
   const lng = useSelector((state) => state.langR.lang);
+  console.log(lng)
 
   useEffect(() => {
-    if (lng === "en") {
+    if (lng === "ar") {
+      fetch("./Arabic.json")
+        .then((response) => response.json())
+        .then((data) => setBooks(data));
+
+      setCategories(["المناطق الجغرافية", "الأدب الجميل", "المجتمع والسياسة"]);
+      
+    } else {
       fetch("./Svenska.json")
         .then((response) => response.json())
         .then((data) => setBooks(data));
@@ -31,12 +39,7 @@ function Library() {
         "Skönlitteratur",
         "Samhälle & politik",
       ]);
-    } else {
-      fetch("./Arabic.json")
-        .then((response) => response.json())
-        .then((data) => setBooks(data));
-
-      setCategories(["المناطق الجغرافية", "الأدب الجميل", "المجتمع والسياسة"]);
+      
     }
     // console.log(books)
   }, [lng, windowWidth]);

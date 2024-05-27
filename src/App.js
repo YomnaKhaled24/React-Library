@@ -24,7 +24,7 @@ i18n
   .use(initReactI18next)
   .use(HttpApi)
   .init({
-    fallbackLng: "ar",
+    fallbackLng: "sv",
     detection:{
       order: [ 
       'cookie', 

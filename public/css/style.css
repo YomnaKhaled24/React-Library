@@ -2133,7 +2133,7 @@ ul.location_icon span {
 /* CarouselCaption.css */
 
 .custom-carousel-caption {
-    margin-bottom: 10rem; /* Default margin for larger screens */
+    margin-bottom: 14rem; /* Default margin for larger screens */
   }
   /* .list-view .media {
     flex-direction: column;
@@ -2147,13 +2147,13 @@ ul.location_icon span {
   } */
   @media (max-width: 1200px) {
     .custom-carousel-caption {
-      margin-bottom: 8rem; /* Adjust margin for large screens */
+      margin-bottom: 12rem; /* Adjust margin for large screens */
     }
   }
   
   @media (max-width: 992px) {
     .custom-carousel-caption {
-      margin-bottom: 6rem; /* Adjust margin for medium screens */
+      margin-bottom: 10rem; /* Adjust margin for medium screens */
     }
   }
   

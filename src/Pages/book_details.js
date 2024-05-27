@@ -15,7 +15,7 @@ const BookDetails = () => {
 
 
   useEffect(() => {
-    const file = lng === "en" ? "/Svenska.json" : "/Arabic.json";
+    const file = lng === "sv" ? "/Svenska.json" : "/Arabic.json";
 
     fetch(file)
       .then((response) => response.json())

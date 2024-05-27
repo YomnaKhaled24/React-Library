@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import Header from "../Components/header.js";
+import Header from "./header.js";
 import Carousel from 'react-bootstrap/Carousel';
 import Marquee from "react-fast-marquee";
 import Card from 'react-bootstrap/Card';
@@ -16,7 +16,7 @@ function OurBookHome() {
   const windowWidth = window.innerWidth;
 
   useEffect(() => {
-    if (lng === "en") {
+    if (lng === "sv") {
       fetch("./Svenska.json")
         .then((response) => response.json())
         .then((data) => setBooks(data));
@@ -35,38 +35,9 @@ function OurBookHome() {
     }
   };
   
-  function getColClass() {
-    // Get the current window width
-    
-  
-    // Set breakpoints for different screen sizes
-    const mediumBreakpoint = 768; // Medium screens (col-md)
-    const smallBreakpoint = 576; // Small screens (col-sm)
-    // const cardNumber = 0
-    // Determine the appropriate column class
-    if (windowWidth >= mediumBreakpoint) {
-      // setcardNumber(3)
-      return "col-md-4"; // Display three cards per row on medium screens
-    } else if (windowWidth >= smallBreakpoint) {
-      // setcardNumber(2)
-      return "col-sm-6"; // Display two cards per row on small screens
-    } else {
-      // setcardNumber(1)
-      return "col-12"; // Display one card per row on extra small screens
-    }
-  }
+ 
 
-  // const carouselItemStyle = {
-  //   display: 'flex',
-  //   // justifyContent: 'space-between',
-  //   // flexWrap: 'wrap',
-  //   // marginBottom: '20px'
-  // };
   
-  // const cardStyle = {
-  //   width: '30%', // Adjust the width to ensure three cards fit per page
-  //   marginBottom: '20px'
-  // };
 
   return (
     <>

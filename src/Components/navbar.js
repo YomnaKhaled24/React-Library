@@ -99,7 +99,7 @@ const Navbar = () => {
                 </button>
                 <button
                   className="dropdown-item"
-                  onClick={() => changeLanguage("en")}
+                  onClick={() => changeLanguage("sv")}
                 >
                   <img
                     src="https://cdn.weglot.com/flags/rectangle_mat/se.svg"

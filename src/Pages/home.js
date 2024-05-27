@@ -35,8 +35,7 @@ const Home = () => {
         />
         <Carousel.Caption className="banner-coler custom-carousel-caption">
           <h1 >{t('first-sentence1')}</h1>
-          <h1 >{t('first-sentence2')}</h1>
-          <h1 >{t('first-sentence3')}</h1>
+         
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
